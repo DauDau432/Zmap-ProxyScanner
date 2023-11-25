@@ -67,12 +67,12 @@
   ```
   ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
   ```
-  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/check.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/check.sh)
   ```
   ***cài đặt chương trình***
   ```shell
-  git clone https://github.com/DauDau432/ScanProxies
-  cd ScanProxies
+  git clone https://github.com/DauDau432/Zmap-ProxyScanner
+  cd Zmap-ProxyScanner
   go build
   ```
 # Ví dụ chạy
