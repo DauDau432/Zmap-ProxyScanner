@@ -40,11 +40,6 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   * Trình quét proxy tệp sẵn có + (từ url)
   * Hiển thị ISP, Quốc gia
   
-# Ví dụ chạy
-  * Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như https://pfcloud.io
-  ```shell
-  zmap -p 8080 | ./ZmapProxyScanner -p 8080
-  ```
 # Build
   > yêu cầu go v1.19+
 
@@ -52,15 +47,46 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
 
   > screen
 
-  ***cài đặt thủ công***
+  ***cài đặt trên centps***
+  ```
+  yum install -y screen
+  yum install -y zmap
+  curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
+  source ~/.gvm/scripts/gvm
+  gvm install go1.19
+  gvm use go1.19 --default
+  ```
+  ***cài đặt trên centps***
+  ```
+  apt install -y screen
+  apt install -y zmap
+  curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
+  source ~/.gvm/scripts/gvm
+  gvm install go1.19
+  gvm use go1.19 --default
+  ```
+  ***cài đặt chương trình***
   ```shell
   git clone https://github.com/DauDau432/ScanProxies
   cd ScanProxies
   go build
   ```
-  ***cài đặt oneclick***
+  ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
+  ```
+  echo " Phiên bản git: $(git --version)"
+  echo " Phiên bản screen: $(screen --version)"
+  echo " Phiên bản go: $(go version)"
+  echo " Phiên bản zmap: $(zmap --version)"
+  ```
+
+# Ví dụ chạy
+  ***Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như*** https://pfcloud.io
   ```shell
-  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/install.sh)
+  zmap -p 8080 | ./ZmapProxyScanner -p 8080
+  ```
+  ```
+  screen -S ScanProxies -dm sh scan.sh
+  screen -r ScanProxies
   ```
   ***hết session scan thì copy all proxy qua file phụ***
   ```shell
