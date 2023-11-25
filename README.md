@@ -47,7 +47,7 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
 
   > screen
 
-  ***cài đặt trên centps***
+  ***cài đặt trên centos***
   ```
   yum install -y screen
   yum install -y zmap
@@ -56,7 +56,7 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   gvm install go1.19
   gvm use go1.19 --default
   ```
-  ***cài đặt trên centps***
+  ***cài đặt trên ubuntu***
   ```
   apt install -y screen
   apt install -y zmap
