@@ -1,5 +1,5 @@
 {
-  "check-site": "https://google.com",
+  "check-site": "https://cloudflare.com",
   "proxy-type": "http",
 
   "http_threads": 10000,
@@ -12,7 +12,7 @@
     "display-ip-info": true
   },
   "timeout": {
-    "http_timeout": 100,
+    "http_timeout": 30,
     "socks4_timeout": 30,
     "socks5_timeout": 30
   }
