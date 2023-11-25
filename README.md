@@ -47,5 +47,5 @@ A Thread Safe fast way to find proxies. Find 2000-5000 working http,socks4,socks
 # Build
   > Requires go v1.19+
   ```shell
-  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/API/main/install.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/install.sh)
   ```
