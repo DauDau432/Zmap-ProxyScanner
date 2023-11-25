@@ -73,10 +73,7 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   ```
   ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
   ```
-  echo " Phiên bản git: $(git --version)"
-  echo " Phiên bản screen: $(screen --version)"
-  echo " Phiên bản go: $(go version)"
-  echo " Phiên bản zmap: $(zmap --version)"
+  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/check.sh)
   ```
 
 # Ví dụ chạy
