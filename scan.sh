@@ -1,0 +1,1 @@
+zmap -p 4006 | ./ZmapProxyScanner -p 4006
