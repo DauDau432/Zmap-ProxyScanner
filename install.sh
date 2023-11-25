@@ -1,20 +1,22 @@
 #!/bin/bash
+
 # Kiểm tra quyền root
 if [ "$EUID" -ne 0 ]; then
     echo " Hãy chạy script với quyền root hoặc sudo."
     exit 1
 fi
 
-# Kiểm tra hệ điều hành
+echo "Trước khi kiểm tra OS"
 if [ -f /etc/os-release ]; then
+    echo "Tìm thấy tập tin OS release"
     source /etc/os-release
     OS=$ID
 elif [ -f /etc/system-release-cpe ]; then
+    echo "Tìm thấy tập tin System release CPE"
     OS=$(awk -F: '{print $3}' /etc/system-release-cpe)
 else
-    echo " Không thể xác định hệ điều hành"
+    echo "Không thể xác định OS"
     exit 1
-fi
 
 # Hàm kiểm tra và cài đặt gói cần thiết trên CentOS
 install_centos_dependencies() {
