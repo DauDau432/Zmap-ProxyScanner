@@ -45,9 +45,17 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   > zmap -p 8080 | ./ZmapProxyScanner -p 8080
 
 # Build
-  > Requires go v1.19+
+  > yêu cầu go v1.19+
+  > zmap
+  > screen
 
-  ***install oneclick***
+  ***cài đặt thủ công***
+  ```shell
+  git clone https://github.com/DauDau432/ScanProxies
+  cd ScanProxies
+  go build
+  ```
+  ***cài đặt oneclick***
   ```shell
   bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/install.sh)
   ```
@@ -55,3 +63,4 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   ```shell
   cat output.txt >> proxy.txt
   ```
+# Nguồn [https://github.com/Yariya/Zmap-ProxyScanner.git](https://github.com/Yariya/Zmap-ProxyScanner.git)
