@@ -1,6 +1,6 @@
 # Zmap-ProxyScanner
 
-A Thread Safe fast way to find proxies. Find 2000-5000 working http,socks4,socks5 proxies in one scan.
+A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 đang hoạt động trong một lần quét.
 
 ![379e86d10c8e05e9d21a20647d37c70ea0d5e976c72a44a2a5506c88d31e5cf3](https://user-images.githubusercontent.com/65712074/195901928-721235f2-163e-4266-ae4e-d7c76b2626d2.png)
 
@@ -26,26 +26,31 @@ A Thread Safe fast way to find proxies. Find 2000-5000 working http,socks4,socks
     }
   }
   ```
-## Flag Args
+# Flag Args
   ```shell
--p <port> - Port you want to scan.
--o <proxies.txt> - Writes proxy hits to file.
--input <proxies.txt> - Loads the proxy list and checks it.
--url https://api.com/proxies - Loads the proxies from an api and checks it.
+-p <port> - Cổng bạn muốn quét.
+-o <proxies.txt> - Ghi lượt truy cập proxy vào tập tin.
+-input <proxies.txt> - Tải danh sách proxy và kiểm tra nó.
+-url https://api.com/proxies - Tải proxy từ api và kiểm tra nó.
   ```
 
 
-# Features
-  * Scan entire world for http,socks4 and socks5 proxies.
-  * Inbuilt file + (from url) proxy scanner
-  * Display ISP, Country
+# Đặc trưng
+  * Quét toàn bộ thế giới để tìm proxy http, socks4 và socks5.
+  * Trình quét proxy tệp sẵn có + (từ url)
+  * Hiển thị ISP, Quốc gia
   
-# Example Run
-  * Be Sure to use an Hosting that allows Portscan just like https://pfcloud.io
+# Ví dụ chạy
+  * Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như https://pfcloud.io
   > zmap -p 8080 | ./ZmapProxyScanner -p 8080
 
 # Build
   > Requires go v1.19+
+  ***install oneclick***
   ```shell
   bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/install.sh)
+  ```
+  ***hết session scan thì copy all proxy qua file phụ***
+  ```shell
+  cat output.txt >> proxy.txt
   ```
