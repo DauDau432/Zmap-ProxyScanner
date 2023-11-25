@@ -46,7 +46,9 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
 
 # Build
   > yêu cầu go v1.19+
+
   > zmap
+
   > screen
 
   ***cài đặt thủ công***
