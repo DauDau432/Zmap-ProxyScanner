@@ -65,17 +65,16 @@
   gvm install go1.19
   gvm use go1.19 --default
   ```
+  ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
+  ```
+  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/check.sh)
+  ```
   ***cài đặt chương trình***
   ```shell
   git clone https://github.com/DauDau432/ScanProxies
   cd ScanProxies
   go build
   ```
-  ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
-  ```
-  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/ScanProxies/main/check.sh)
-  ```
-
 # Ví dụ chạy
   ***Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như*** https://pfcloud.io
   ```shell
