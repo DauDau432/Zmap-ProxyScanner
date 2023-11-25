@@ -42,8 +42,9 @@ A cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 �
   
 # Ví dụ chạy
   * Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như https://pfcloud.io
-  > zmap -p 8080 | ./ZmapProxyScanner -p 8080
-
+  ```shell
+  zmap -p 8080 | ./ZmapProxyScanner -p 8080
+  ```
 # Build
   > yêu cầu go v1.19+
 
