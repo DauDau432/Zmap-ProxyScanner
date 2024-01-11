@@ -78,7 +78,7 @@
 # Ví dụ chạy
   ***Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như*** https://pfcloud.io
   ```shell
-  zmap -p 4006 | ./ZmapProxyScanner -p 4006
+  zmap -p 4006 -o http.txt | ./ZmapProxyScanner -p 4006
   ```
   ```
   screen -S ScanProxies -dm sh scan.sh
