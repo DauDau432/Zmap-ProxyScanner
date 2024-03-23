@@ -49,6 +49,8 @@
 
   ***cài đặt trên centos***
   ```
+  yum update -y
+  yum upgrade -y
   yum install -y screen
   yum install -y zmap
   curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
@@ -58,6 +60,8 @@
   ```
   ***cài đặt trên ubuntu***
   ```
+  apt update -y
+  apt upgrade -y
   apt install -y screen
   apt install -y zmap
   curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
