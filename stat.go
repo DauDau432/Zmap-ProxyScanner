@@ -22,7 +22,7 @@ var (
 
 func Stater() {
 	for range time.Tick(time.Second) {
-		fmt.Printf("Imported [\u001B[34m%d\u001B[39m] IPs Checked [\u001B[34m%d\u001B[39m] IPs (Success: \033[32m%d\033[39m, StatusCodeErr: \u001B[31m%d\u001B[39m, ProxyErr: \u001B[31m%d\u001B[39m, Timeout: \u001B[31m%d\u001B[39m) with \u001B[34m%d\u001B[39m open http threads\n",
+		fmt.Printf("[DauDau] Imported [\u001B[34m%d\u001B[39m] IPs Checked [\u001B[34m%d\u001B[39m] IPs (Success: \033[32m%d\033[39m, StatusCodeErr: \u001B[31m%d\u001B[39m, ProxyErr: \u001B[31m%d\u001B[39m, Timeout: \u001B[31m%d\u001B[39m) with \u001B[34m%d\u001B[39m open http threads\n",
 			atomic.LoadUint64(&imported),
 			atomic.LoadUint64(&checked),
 			atomic.LoadUint64(&success),
