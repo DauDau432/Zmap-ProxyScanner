@@ -55,8 +55,8 @@
   yum install -y zmap
   curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
   source ~/.gvm/scripts/gvm
-  gvm install go1.19
-  gvm use go1.19 --default
+  gvm install go1.20
+  gvm use go1.20 --default
   ```
   ***cài đặt trên ubuntu***
   ```
@@ -67,8 +67,8 @@
   sudo apt-get install curl git mercurial make binutils bison gcc build-essential -y
   curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
   source ~/.gvm/scripts/gvm
-  gvm install go1.19
-  gvm use go1.19 --default
+  gvm install go1.20
+  gvm use go1.20 --default
   ```
   ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
   ```
