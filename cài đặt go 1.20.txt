@@ -1,0 +1,19 @@
+đang cài trên ubuntu 20.04
+trang chủ https://go.dev/dl/
+file tải wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
+tải file go vào máy rồi giải nén
+sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+
+Thiết lập biến môi trường PATH
+Thêm dòng sau vào file ~/.profile hoặc ~/.bashrc:
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
+Tải lại cấu hình shell
+source ~/.profile
+kiểm tra phiên bản hiện tại
+go version
+
+nếu không được hãy xác định lại vị trí lệnh go
+which go
+Loại bỏ phiên bản Go cũ
+sudo mv /usr/bin/go /usr/bin/go_old
+sudo mv /usr/bin/gofmt /usr/bin/gofmt_old
