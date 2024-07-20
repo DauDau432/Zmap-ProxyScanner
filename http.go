@@ -45,7 +45,7 @@ func (p *Proxy) WorkerThread() {
 		for atomic.LoadInt64(&p.openHttpThreads) < int64(config.HttpThreads) {
 			p.mu.Lock()
 			for proxy, _ := range p.ips {
-				if strings.ToLower(config.ProxyType) == "http" {
+				if strings.ToLower(config.ProxyType) == "https" {
 					go p.CheckProxyHTTP(proxy)
 				} else if strings.ToLower(config.ProxyType) == "socks4" {
 					go p.CheckProxySocks4(proxy)
