@@ -100,9 +100,9 @@
   zmap -w subnetvn.txt -p 3128 -i eth0  | ./ZmapProxyScanner -p 3128
   ```
 
-  ***scan zmap proxy việt
+  ***scan zmap proxy việt***
   
-port: 10001 6001 3008 9977 7007 5001 4001***
+  port: 10001 6001 3008 9977 7007 5001 4001
 
   ```
   screen -S ScanProxies -dm sh scan.sh
