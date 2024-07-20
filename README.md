@@ -97,6 +97,9 @@
   zmap -p 4006 | ./ZmapProxyScanner -p 4006
   ```
   ```
+  zmap -w subnetvn.txt -p 3128 -i eth0  | ./ZmapProxyScanner -p 3128
+  ```
+  ```
   screen -S ScanProxies -dm sh scan.sh
   screen -r ScanProxies
   ```
