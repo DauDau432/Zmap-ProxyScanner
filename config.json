@@ -1,6 +1,6 @@
 {
   "check-site": "https://cloudflare.com",
-  "proxy-type": "http",
+  "proxy-type": "https",
 
   "http_threads": 10000,
   "headers": {
