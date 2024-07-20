@@ -1,6 +1,6 @@
 {
   "check-site": "https://www.google.com",
-  "proxy-type": "https",
+  "proxy-type": "http",
 
   "http_threads": 10000,
   "headers": {
