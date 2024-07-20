@@ -65,8 +65,19 @@
   apt install -y screen
   apt install -y zmap
   sudo apt-get install curl git mercurial make binutils bison gcc build-essential -y
+
   curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
   source ~/.gvm/scripts/gvm
+
+  gvm install go1.20
+  gvm use go1.20 --default
+  ```
+
+  ***nếu lỗi cài go thì cài lại 1 bản cũ sau đó mới cài bản mới***
+  ```
+  gvm install go1.17.13
+  gvm use go1.17.13 --default
+
   gvm install go1.20
   gvm use go1.20 --default
   ```
