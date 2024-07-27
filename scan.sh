@@ -1,1 +1,1 @@
-zmap -p 4006 | ./ZmapProxyScanner -p 4006
+zmap -p 3128 | ./ZmapProxyScanner -p 3128
