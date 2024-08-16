@@ -100,9 +100,7 @@
 
   ***[dải ip all quốc gia](https://www.ipdeny.com/ipblocks/)***
   
-  ***port scan***
-  
-  port: 10001 6001 3008 9977 7007 5001 4001
+  ***port scan:*** 10001 6001 3008 9977 7007 5001 4001
 
   ```
   screen -S ScanProxies -dm sh scan.sh
