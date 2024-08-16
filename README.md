@@ -2,8 +2,6 @@
 
 * cách nhanh chóng để tìm proxy. Tìm 2000-5000 proxy http,socks4,socks5 đang hoạt động trong một lần quét.
 
-![379e86d10c8e05e9d21a20647d37c70ea0d5e976c72a44a2a5506c88d31e5cf3](https://user-images.githubusercontent.com/65712074/195901928-721235f2-163e-4266-ae4e-d7c76b2626d2.png)
-
 # Config
   ```json
    {
@@ -100,6 +98,8 @@
   zmap -w subnetvn.txt -p 10001 -i eth0  | ./ZmapProxyScanner -p 10001
   ```
 
+  ***[dải ip all quốc gia](https://www.ipdeny.com/ipblocks/)***
+  
   ***port scan***
   
   port: 10001 6001 3008 9977 7007 5001 4001
@@ -112,4 +112,4 @@
   ```shell
   cat output.txt >> proxy.txt
   ```
-# Nguồn [https://github.com/Yariya/Zmap-ProxyScanner.git](https://github.com/Yariya/Zmap-ProxyScanner.git)
+### [Nguồn](https://github.com/Yariya/Zmap-ProxyScanner.git)
