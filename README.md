@@ -34,7 +34,7 @@
 
 
 # Đặc trưng
-  * Quét toàn bộ thế giới để tìm proxy http, socks4 và socks5.
+  * Quét toàn bộ thế giới để tìm proxy http/s, socks4 và socks5.
   * Trình quét proxy tệp sẵn có + (từ url)
   * Hiển thị ISP, Quốc gia
   
