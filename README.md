@@ -103,7 +103,9 @@
   ***port scan:*** 10001 6001 3008 9977 7007 5001 4001
 
   ```
-  screen -S ScanProxies -dm sh scan.sh
+  chmod +x ZmapProxyScanner
+  chmod +x scan
+  screen -S ScanProxies -dm sh scan
   screen -r ScanProxies
   ```
   ***hết session scan thì copy all proxy qua file phụ***
