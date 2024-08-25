@@ -100,7 +100,7 @@
 
   ***[dải ip all quốc gia](https://www.ipdeny.com/ipblocks/)***
   
-  ***port scan:*** 10001 5106 5102 6001 3008 9977 7007 5001 4001
+  ***port scan:*** 10001 5106 5102 1014 6001 3008 9977 7007 5001 4001
 
   ```
   chmod +x ZmapProxyScanner
