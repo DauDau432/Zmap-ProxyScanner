@@ -1,4 +1,4 @@
-module ZmapProxyScanner
+module scanproxy
 
 go 1.20 // phiên bản hiện tại trên vps yêu cầu 1.19 trở lên
 
