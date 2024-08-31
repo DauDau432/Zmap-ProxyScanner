@@ -1,5 +1,5 @@
 {
-  "check-site": "https://cloudflare.com",
+  "check-site": "https://google.com",
   "proxy-type": "http",
 
   "http_threads": 10000,
