@@ -102,11 +102,12 @@
   
   ***port scan:*** 10001 5106 5102 1014 3008 9977 7007 7001 4002 4006 8080
 
+ # File build sẵn 
   ```
-  chmod +x ZmapProxyScanner
+  chmod +x scanproxy
   chmod +x scan
-  screen -S ScanProxies -dm sh scan
-  screen -r ScanProxies
+  screen -S scan -dm sh scan
+  screen -r scan
   ```
   ***hết session scan thì copy all proxy qua file phụ***
   ```shell
