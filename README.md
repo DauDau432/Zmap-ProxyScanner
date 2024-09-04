@@ -92,10 +92,10 @@
 # Ví dụ chạy
   ***Hãy chắc chắn sử dụng Dịch vụ lưu trữ cho phép Portscan giống như*** https://pfcloud.io
   ```shell
-  zmap -p 4006 | ./ZmapProxyScanner -p 4006
+  zmap -p 3128 | ./ZmapProxyScanner -p 3128
   ```
   ```
-  zmap -w subnetvn -p 3128 -i eth0  | ./ZmapProxyScanner -p 3128
+  zmap -w subnetvn -p 1001 | ./ZmapProxyScanner -p 1001
   ```
 
   ***[dải ip all quốc gia](https://www.ipdeny.com/ipblocks/)***
