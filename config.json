@@ -1,11 +1,11 @@
 {
-  "check-site": "https://google.com",
+  "check-site": "https://www.google.com",
   "proxy-type": "http",
 
   "http_threads": 10000,
   "headers": {
     "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36",
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.30"
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
   },
   "print_ips": {
     "enabled": true,
