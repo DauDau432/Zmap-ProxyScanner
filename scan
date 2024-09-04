@@ -1,1 +1,1 @@
-zmap -w subnetvn.txt -p 10001 -i eth0 | ./scanproxy -p 10001
+zmap -w subnetall -p 3128 -q -B10G -i eth0 | ./scanproxy -p 3128
