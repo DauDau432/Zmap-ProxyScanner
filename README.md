@@ -105,11 +105,11 @@
  # File build sẵn 
  ***tải xuống các file cần thiết***
  ```
-https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/config.json
-https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/scan
-https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetall
-https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetvn
-https://github.com/DauDau432/Zmap-ProxyScanner/raw/main/scanproxy
+wget https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/config.json
+wget https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/scan
+wget https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetall
+wget https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetvn
+wget https://github.com/DauDau432/Zmap-ProxyScanner/raw/main/scanproxy
 ```
   ```
   chmod +x subnetall subnetvn scanproxy scan
