@@ -95,7 +95,7 @@
   zmap -p 4006 | ./ZmapProxyScanner -p 4006
   ```
   ```
-  zmap -w subnetvn.txt -p 10001 -i eth0  | ./ZmapProxyScanner -p 10001
+  zmap -w subnetvn -p 3128 -i eth0  | ./ZmapProxyScanner -p 3128
   ```
 
   ***[dải ip all quốc gia](https://www.ipdeny.com/ipblocks/)***
