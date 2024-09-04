@@ -103,10 +103,17 @@
   ***port scan:*** 10001 5106 5102 1014 3008 9977 7007 7001 4002 4006 8080
 
  # File build sẵn 
+ ***tải xuống các file cần thiết***
+ ```
+https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/config.json
+https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/scan
+https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetall
+https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/subnetvn
+https://github.com/DauDau432/Zmap-ProxyScanner/raw/main/scanproxy
+```
   ```
-  chmod +x scanproxy
-  chmod +x scan
-  screen -S scan -dm sh scan
+  chmod +x subnetall subnetvn scanproxy scan
+  screen -dmS scan ./scan
   screen -r scan
   ```
   ***hết session scan thì copy all proxy qua file phụ***
