@@ -44,15 +44,14 @@ func (p *Proxy) WorkerThread() {
 	for {
 		for atomic.LoadInt64(&p.openHttpThreads) < int64(config.HttpThreads) {
 			p.mu.Lock()
-			for proxy := range p.ips {
-				switch strings.ToLower(config.ProxyType) {
-				case "http", "https":
+			for proxy, _ := range p.ips {
+				if strings.ToLower(config.ProxyType) == "http" {
 					go p.CheckProxyHTTP(proxy)
-				case "socks4":
+				} else if strings.ToLower(config.ProxyType) == "socks4" {
 					go p.CheckProxySocks4(proxy)
-				case "socks5":
+				} else if strings.ToLower(config.ProxyType) == "socks5" {
 					go p.CheckProxySocks5(proxy)
-				default:
+				} else {
 					log.Fatalln("invalid ProxyType")
 				}
 				delete(p.ips, proxy)
@@ -83,12 +82,15 @@ func (p *Proxy) CheckProxyHTTP(proxy string) {
 		}
 	}
 
-	protocol := "http"
-	if strings.ToLower(config.ProxyType) == "https" {
-		protocol = "https"
+	if len(s) > 1 {
+		var err error
+		proxyPort, err = strconv.Atoi(s[1])
+		if err != nil {
+			log.Println(err)
+			return
+		}
 	}
-
-	proxyUrl, err := url.Parse(fmt.Sprintf("%s://%s:%d", protocol, s[0], proxyPort))
+	proxyUrl, err := url.Parse(fmt.Sprintf("http://%s:%d", s[0], proxyPort))
 	if err != nil {
 		log.Println(err)
 		return
@@ -210,7 +212,7 @@ func (p *Proxy) CheckProxySocks5(proxy string) {
 	}
 
 	tr := &http.Transport{
-		Dial: socks.Dial(fmt.Sprintf("socks5://%s:%d?timeout=%ds", s[0], proxyPort, config.Timeout.Socks5Timeout)),
+		Dial: socks.Dial(fmt.Sprintf("socks5://%s:%d?timeout=%ds", s[0], proxyPort, config.Timeout.Socks4Timeout)),
 	}
 
 	client := http.Client{
