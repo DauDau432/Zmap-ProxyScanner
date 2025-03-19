@@ -1,1 +1,1 @@
-zmap -w subnetall -p 3128 -q -B10G -i eth0 | ./scanproxy -p 3128
+zmap -w subnetall -p 3128 -T3 -i eth0 | ./scanproxy -p 3128
